@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import himedia.myportal.repositories.vo.GuestbookVo;
 
 @Mapper
-public class GuestbookMapper {
+public interface GuestbookMapper {
 	
 	List<GuestbookVo> selectAll();
 	
@@ -16,8 +16,6 @@ public class GuestbookMapper {
 	int delete(GuestbookVo vo);
 
 }
-
-
 
 
 
