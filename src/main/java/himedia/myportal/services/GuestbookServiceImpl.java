@@ -20,12 +20,16 @@ public class GuestbookServiceImpl implements GuestbookService {
 		return list;
 	}
 
+	
+	// boolean -> 성공인가 실패인가로 나누고 싶으니까 (게시물 업로드가 성공이냐 실패냐)
 	@Override
 	public boolean writeMessage(GuestbookVo vo) {
 		int insertedCount = guestbookDaoImpl.insert(vo);
 		return 1 == insertedCount;
 	}
 
+	
+	
 	@Override
 	public boolean deleteMessage(GuestbookVo vo) {
 		int deletedCount = guestbookDaoImpl.delete(vo);

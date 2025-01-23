@@ -23,7 +23,6 @@ public interface GuestbookMapper {
 
 
 
-
 // mapper 인터페이스
 
 /* 설명
