@@ -3,8 +3,10 @@ package himedia.myportal.repositories;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import himedia.myportal.mappers.GuestbookMapper;
 import himedia.myportal.repositories.vo.GuestbookVo;
 
 @Repository
@@ -12,6 +14,8 @@ public class GuestbookDaoImpl
 	implements GuestbookDao {
 //	@Autowired
 //	SqlSession sqlSession;
+	@Autowired
+	GuestbookMapper guestbookMapper;
 	
 	@Override
 	public List<GuestbookVo> selectAll() {

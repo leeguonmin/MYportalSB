@@ -10,6 +10,10 @@ import himedia.myportal.repositories.vo.GuestbookVo;
 public class GuestbookMapper {
 	
 	List<GuestbookVo> selectAll();
+	
+	int insert(GuestbookVo vo);
+	
+	int delete(GuestbookVo vo);
 
 }
 
