@@ -21,7 +21,7 @@ public class GuestbookDaoImpl
 	public List<GuestbookVo> selectAll() {
 //		List<GuestbookVo> list = sqlSession.selectList("guestbook.selectAll");
 //		return list;
-		return null;
+		return guestbookMapper.selectAll();
 	}
 
 	@Override
