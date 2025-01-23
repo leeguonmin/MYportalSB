@@ -15,7 +15,7 @@ public class GuestbookDaoImpl
 //	@Autowired
 //	SqlSession sqlSession;
 	@Autowired
-	GuestbookMapper guestbookMapper;
+	private GuestbookMapper guestbookMapper;
 	
 	@Override
 	public List<GuestbookVo> selectAll() {

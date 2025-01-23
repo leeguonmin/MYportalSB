@@ -26,6 +26,7 @@ public class GuestbookController {
 		return "guestbook/list";
 	}
 	
+
 	
 	/*
 	@Autowired
