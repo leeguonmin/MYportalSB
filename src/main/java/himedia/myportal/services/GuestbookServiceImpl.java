@@ -9,15 +9,14 @@ import himedia.myportal.repositories.GuestbookDao;
 import himedia.myportal.repositories.vo.GuestbookVo;
 
 @Service
-public class GuestbookServiceImpl 
-	implements GuestbookService {
+public class GuestbookServiceImpl implements GuestbookService {
 	@Autowired
 	GuestbookDao guestbookDaoImpl;
 	
 	@Override
 	public List<GuestbookVo> getMessageList() {
-		List<GuestbookVo> list =
-				guestbookDaoImpl.selectAll();
+		List<GuestbookVo> list = guestbookDaoImpl.selectAll();
+		
 		return list;
 	}
 
