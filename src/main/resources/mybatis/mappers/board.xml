@@ -14,6 +14,7 @@
 		WHERE b.user_no = u.no
 	</select>
 	
+	
 	<insert id ="insert" parameterType="boardVo" >
 		INSERT INTO board
 			(title, content, user_no)
@@ -23,6 +24,7 @@
 			#{userNo}
 			)
 	</insert>
+	
 	
 	<update id="increaseHitCount" parameterType="int">
 	UPDATE board
